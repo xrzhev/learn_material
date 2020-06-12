@@ -31,7 +31,7 @@ class sock_con:
     def main_loop(self):
         self.logging.debug("started")
         if self.is_fake == False:
-            self.logging.critical("COLLECT PORT!")
+            self.logging.critical("CORRECT PORT!")
         while(1):
             con, addr = self.sock.accept()
             thread = threading.Thread(target=self.listener,args=(con, addr), name="listener-port:{}".format(self.info["port"]))
