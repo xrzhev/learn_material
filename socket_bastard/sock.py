@@ -59,7 +59,7 @@ class sock_con:
 
 
 if __name__ == "__main__":
-    hoge = []
+    thread_arr = []
     for i in range(LISTEN_NUM-1):
-        hoge.append(sock_con(True , logging))
-    hoge.append(sock_con(False, logging))
+        thread_arr.append(sock_con(True , logging))
+    thread_arr.append(sock_con(False, logging))
