@@ -2,11 +2,12 @@ import socket
 import logging
 import threading
 import os
-
-
-logging.basicConfig(level=logging.DEBUG, format="[%(levelname)s] %(asctime)s %(threadName)s : %(message)s")
+import time
 
 LISTEN_NUM = 100
+EXEC_TIME  = time.strftime("%Y%m%d_%H%M%S")
+
+logging.basicConfig(level=logging.DEBUG, filename="/var/log/socket_bastard/{}.log".format(EXEC_TIME), format="[%(levelname)s] %(asctime)s %(threadName)s : %(message)s")
 
 logging.info("Application is runnning...")
 logging.debug("NUMBER OF PORTS: {0}".format(LISTEN_NUM))
