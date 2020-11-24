@@ -1,0 +1,4 @@
+<?php
+$KEY = 'fakefakefakekey';
+$FLAG = 'YURUHACK{fakefakefakeflag}';
+?>
