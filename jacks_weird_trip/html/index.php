@@ -21,8 +21,29 @@ setcookie("AMI", $jwt);
     <source src="img/bg.mp4" type="video/mp4">
   </video>
   <div id=maincontent>
-    <a>IF YOU HAVE "admin" PRIV, CLICK THIS LINK.</a><br>
-    <a href="/admin.php">ADMIN_PAGE</a>
+    <h1>IF YOU HAVE "admin" PRIV, CLICK THIS LINK.</h1>
+    <h3><a href="/admin.php">ADMIN_PAGE</a><h3>
   </div>
 </body>
 </html>
+
+<style>
+video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  opacity: 0.4;
+}
+#maincontent {
+  position: relative;
+  text-align:center;
+  z-index: 2;
+  margin: auto;
+}
+</style>
