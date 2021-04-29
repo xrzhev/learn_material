@@ -34,7 +34,6 @@ def sanitize(fqdn: str) -> str:
 
 @app.route("/")
 def page_main():
-    print(getpass.getuser())
     return render_template("index.html")
 
 @app.route("/ezpz")
