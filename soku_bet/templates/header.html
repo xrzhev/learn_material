@@ -1,0 +1,17 @@
+{% extends "./index.html" %}
+
+{% block header %}
+<section class="hero is-small is-primary">
+  <div class="hero-body">
+    <p class="title">
+    即BET
+    </p>
+    <p class="subtitle">
+    YOUR ASSET : {{ own_money }} YEN.
+    </p>
+    <form method="post" action="/new">
+      <button class="button is-warning">NEW RACE</button>
+    </form>
+  </div>
+</section>
+{% endblock %}
